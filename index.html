@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ИГРА "Найди пару"</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+
+<div class="pageTitle">
+	<h1>Найди пару</h1>
+</div>
+
+ <div class="top"> 
+    <button class="overlay-text visible"> Начни игру</button>
+</div>
+
+<div id="game-over-text" class="overlay-text">
+  КОНЕЦ ИГРЫ
+  <span class="overlay-text-small">Играть еще раз</span>
+</div>
+
+<div id="victory-text" class="overlay-text">
+  ПОБЕДА!!!
+  <span class="overlay-text-small">Играть еще раз</span>
+</div>
+
+  <div class="game-container">
+    <div class="game-info-container">
+      <div class="game-info">
+          <h4 id="time-remaining"> Время: 100 секунд </h4>
+       
+      </div>
+      <div class="game-info">
+          <h4 id="flips">Клик: 0</h4>
+        <!-- Клик <span id="flips">0</span> -->
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-back card-face">
+        <img src="лапа кота.jpg" alt="cat" class="paw-web paw-move">
+      </div>
+      <div class="card-front card-face">
+        <img src="0.jpg" alt="cat" class="paw-web card-value">
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-back card-face">
+        <img src="лапа кота.jpg" alt="cat" class="paw-web paw-move">
+      </div>
+      <div class="card-front card-face">
+        <img src="0.jpg" alt="cat" class="paw-web card-value">
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-back card-face">
+        <img src="лапа кота.jpg" alt="cat" class="paw-web paw-move">
+      </div>
+      <div class="card-front card-face">
+        <img src="2.2.jpg" alt="cat" class="paw-web card-value">
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-back card-face">
+        <img src="лапа кота.jpg" alt="cat" class="paw-web paw-move">
+      </div>
+      <div class="card-front card-face">
+        <img src="2.2.jpg" alt="cat" class="paw-web card-value">
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-back card-face">
+        <img src="лапа кота.jpg" alt="cat" class="paw-web paw-move">
+      </div>
+      <div class="card-front card-face">
+        <img src="3.3.jpg" alt="cat" class="paw-web card-value">
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-back card-face">
+        <img src="лапа кота.jpg" alt="cat" class="paw-web paw-move">
+      </div>
+      <div class="card-front card-face">
+        <img src="3.3.jpg" alt="cat" class="paw-web card-value">
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-back card-face">
+        <img src="лапа кота.jpg" alt="cat" class="paw-web paw-move">
+      </div>
+      <div class="card-front card-face">
+        <img src="4.jpg" alt="cat" class="paw-web card-value">
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-back card-face">
+        <img src="лапа кота.jpg" alt="cat" class="paw-web paw-move">
+      </div>
+      <div class="card-front card-face">
+        <img src="4.jpg" alt="cat" class="paw-web card-value">
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-back card-face">
+        <img src="лапа кота.jpg" alt="cat" class="paw-web paw-move">
+      </div>
+      <div class="card-front card-face">
+        <img src="5.jpg" alt="cat" class="paw-web card-value">
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-back card-face">
+        <img src="лапа кота.jpg" alt="cat" class="paw-web paw-move">
+      </div>
+      <div class="card-front card-face">
+        <img src="5.jpg" alt="cat" class="paw-web card-value">
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-back card-face">
+        <img src="лапа кота.jpg" alt="cat" class="paw-web paw-move">
+      </div>
+      <div class="card-front card-face">
+        <img src="6.jpg" alt="cat" class="paw-web card-value">
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-back card-face">
+        <img src="лапа кота.jpg" alt="cat" class="paw-web paw-move">
+      </div>
+      <div class="card-front card-face">
+        <img src="6.jpg" alt="cat" class="paw-web card-value">
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-back card-face">
+        <img src="лапа кота.jpg" alt="cat" class="paw-web paw-move">
+      </div>
+      <div class="card-front card-face">
+        <img src="7.jpg" alt="cat" class="paw-web card-value">
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-back card-face">
+        <img src="лапа кота.jpg" alt="cat" class="paw-web paw-move">
+      </div>
+      <div class="card-front card-face">
+        <img src="7.jpg" alt="cat" class="paw-web card-value">
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-back card-face">
+        <img src="лапа кота.jpg" alt="cat" class="paw-web paw-move">
+      </div>
+      <div class="card-front card-face">
+        <img src="11.1.jpg" alt="cat" class="paw-web card-value">
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-back card-face">
+        <img src="лапа кота.jpg" alt="cat" class="paw-web paw-move">
+      </div>
+      <div class="card-front card-face">
+        <img src="11.1.jpg" alt="cat" class="paw-web card-value">
+      </div>
+    </div> 
+
+
+    <!-- <div class="card">
+        <div class="card-back card-face">
+          <img src="лапа кота.jpg" alt="cat" class="paw-web paw-move">
+        </div>
+        <div class="card-front card-face">
+          <img src="9.jpg" alt="cat" class="paw-web card-value">
+        </div>
+      </div> -->
+
+    <!-- <div class="card">
+        <div class="card-back card-face">
+          <img src="лапа кота.jpg" alt="cat" class="paw-web paw-move">
+        </div>
+        <div class="card-front card-face">
+          <img src="9.jpg" alt="cat" class="paw-web card-value">
+        </div>
+      </div> -->
+
+      <!-- <div class="card">
+        <div class="card-back card-face">
+          <img src="лапа кота.jpg" alt="cat" class="paw-web paw-move">
+        </div>
+        <div class="card-front card-face">
+          <img src="10.jpg" alt="cat" class="paw-web card-value">
+        </div>
+      </div> -->
+
+    <!-- <div class="card">
+        <div class="card-back card-face">
+          <img src="лапа кота.jpg" alt="cat" class="paw-web paw-move">
+        </div>
+        <div class="card-front card-face">
+          <img src="10.jpg" alt="cat" class="paw-web card-value">
+        </div>
+      </div> -->
+
+      <!-- <div class="card">
+        <div class="card-back card-face">
+          <img src="лапа кота.jpg" alt="cat" class="paw-web paw-move">
+        </div>
+        <div class="card-front card-face">
+          <img src="11.jpg" alt="cat" class="paw-web card-value">
+        </div>
+      </div> -->
+
+    <!-- <div class="card">
+        <div class="card-back card-face">
+          <img src="лапа кота.jpg" alt="cat" class="paw-web paw-move">
+        </div>
+        <div class="card-front card-face">
+          <img src="11.jpg" alt="cat" class="paw-web card-value">
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-back card-face">
+          <img src="лапа кота.jpg" alt="cat" class="paw-web paw-move">
+        </div>
+        <div class="card-front card-face">
+          <img src="12.jpg" alt="cat" class="paw-web card-value">
+        </div>
+      </div>
+
+    <div class="card">
+        <div class="card-back card-face">
+          <img src="лапа кота.jpg" alt="cat" class="paw-web paw-move">
+        </div>
+        <div class="card-front card-face">
+          <img src="12.jpg" alt="cat" class="paw-web card-value">
+        </div>
+      </div> -->
+
+
+    </div>
+<br>
+<hr>
+<br>
+    
+    <script  src="script.js" async></script>
+</body>
+</html>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

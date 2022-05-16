@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myCardGame</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    
+  <!-- <img class="cap" src="https://cdn.glitch.me/352dcfef-c818-4965-9d3c-44fa559f55d5%2Fsanta.png?v=1639379786530" alt="hat"> -->
+<div class="pageTitle">
+	<h1>Найди всех котиков</h1>
+</div>
+
+<div class="overlay-text visible">
+  Начни игру
+</div>
+
+<div id="game-over-text" class="overlay-text">
+  КОНЕЦ ИГРЫ
+  <span class="overlay-text-small">Играть еще раз</span>
+</div>
+
+<div id="victory-text" class="overlay-text">
+  ПОБЕДА!!!
+  <span class="overlay-text-small">Играть еще раз</span>
+</div>
+
+  <div class="game-container">
+    <div class="game-info-container">
+      <div class="game-info">
+        Время <span id="time-remaining">100</span>
+      </div>
+      <div class="game-info">
+        Клик <span id="flips">0</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-back card-face">
+        <img src="https://cdn.glitch.me/352dcfef-c818-4965-9d3c-44fa559f55d5%2Fpaw.jpg?v=1639379786531" alt="cat" class="paw-web paw-move">
+      </div>
+      <div class="card-front card-face">
+        <img src="https://cdn.glitch.me/352dcfef-c818-4965-9d3c-44fa559f55d5%2FCatOne.jpg?v=1639379774363" alt="cat" class="paw-web card-value">
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-back card-face">
+        <img src="https://cdn.glitch.me/352dcfef-c818-4965-9d3c-44fa559f55d5%2Fpaw.jpg?v=1639379786531" alt="cat" class="paw-web paw-move">
+      </div>
+      <div class="card-front card-face">
+        <img src="https://cdn.glitch.me/352dcfef-c818-4965-9d3c-44fa559f55d5%2FCatOne.jpg?v=1639379774363" alt="cat" class="paw-web card-value">
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-back card-face">
+        <img src="https://cdn.glitch.me/352dcfef-c818-4965-9d3c-44fa559f55d5%2Fpaw.jpg?v=1639379786531" alt="cat" class="paw-web paw-move">
+      </div>
+      <div class="card-front card-face">
+        <img src="https://cdn.glitch.me/352dcfef-c818-4965-9d3c-44fa559f55d5%2FCatTwo.jpg?v=1639379774479" alt="cat" class="paw-web card-value">
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-back card-face">
+        <img src="https://cdn.glitch.me/352dcfef-c818-4965-9d3c-44fa559f55d5%2Fpaw.jpg?v=1639379786531" alt="cat" class="paw-web paw-move">
+      </div>
+      <div class="card-front card-face">
+        <img src="https://cdn.glitch.me/352dcfef-c818-4965-9d3c-44fa559f55d5%2FCatTwo.jpg?v=1639379774479" alt="cat" class="paw-web card-value">
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-back card-face">
+        <img src="https://cdn.glitch.me/352dcfef-c818-4965-9d3c-44fa559f55d5%2Fpaw.jpg?v=1639379786531" alt="cat" class="paw-web paw-move">
+      </div>
+      <div class="card-front card-face">
+        <img src="https://cdn.glitch.me/352dcfef-c818-4965-9d3c-44fa559f55d5%2FCatThree.jpg?v=1639379774547" alt="cat" class="paw-web card-value">
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-back card-face">
+        <img src="https://cdn.glitch.me/352dcfef-c818-4965-9d3c-44fa559f55d5%2Fpaw.jpg?v=1639379786531" alt="cat" class="paw-web paw-move">
+      </div>
+      <div class="card-front card-face">
+        <img src="https://cdn.glitch.me/352dcfef-c818-4965-9d3c-44fa559f55d5%2FCatThree.jpg?v=1639379774547" alt="cat" class="paw-web card-value">
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-back card-face">
+        <img src="https://cdn.glitch.me/352dcfef-c818-4965-9d3c-44fa559f55d5%2Fpaw.jpg?v=1639379786531" alt="cat" class="paw-web paw-move">
+      </div>
+      <div class="card-front card-face">
+        <img src="https://cdn.glitch.me/352dcfef-c818-4965-9d3c-44fa559f55d5%2FCatFour.jpg?v=1639379774151" alt="cat" class="paw-web card-value">
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-back card-face">
+        <img src="https://cdn.glitch.me/352dcfef-c818-4965-9d3c-44fa559f55d5%2Fpaw.jpg?v=1639379786531" alt="cat" class="paw-web paw-move">
+      </div>
+      <div class="card-front card-face">
+        <img src="https://cdn.glitch.me/352dcfef-c818-4965-9d3c-44fa559f55d5%2FCatFour.jpg?v=1639379774151" alt="cat" class="paw-web card-value">
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-back card-face">
+        <img src="https://cdn.glitch.me/352dcfef-c818-4965-9d3c-44fa559f55d5%2Fpaw.jpg?v=1639379786531" alt="cat" class="paw-web paw-move">
+      </div>
+      <div class="card-front card-face">
+        <img src="https://cdn.glitch.me/352dcfef-c818-4965-9d3c-44fa559f55d5%2FCatFive.jpg?v=1639379774248" alt="cat" class="paw-web card-value">
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-back card-face">
+        <img src="https://cdn.glitch.me/352dcfef-c818-4965-9d3c-44fa559f55d5%2Fpaw.jpg?v=1639379786531" alt="cat" class="paw-web paw-move">
+      </div>
+      <div class="card-front card-face">
+        <img src="https://cdn.glitch.me/352dcfef-c818-4965-9d3c-44fa559f55d5%2FCatFive.jpg?v=1639379774248" alt="cat" class="paw-web card-value">
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-back card-face">
+        <img src="https://cdn.glitch.me/352dcfef-c818-4965-9d3c-44fa559f55d5%2Fpaw.jpg?v=1639379786531" alt="cat" class="paw-web paw-move">
+      </div>
+      <div class="card-front card-face">
+        <img src="https://cdn.glitch.me/352dcfef-c818-4965-9d3c-44fa559f55d5%2FCatSix.jpg?v=1639379774449" alt="cat" class="paw-web card-value">
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-back card-face">
+        <img src="https://cdn.glitch.me/352dcfef-c818-4965-9d3c-44fa559f55d5%2Fpaw.jpg?v=1639379786531" alt="cat" class="paw-web paw-move">
+      </div>
+      <div class="card-front card-face">
+        <img src="https://cdn.glitch.me/352dcfef-c818-4965-9d3c-44fa559f55d5%2FCatSix.jpg?v=1639379774449" alt="cat" class="paw-web card-value">
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-back card-face">
+        <img src="https://cdn.glitch.me/352dcfef-c818-4965-9d3c-44fa559f55d5%2Fpaw.jpg?v=1639379786531" alt="cat" class="paw-web paw-move">
+      </div>
+      <div class="card-front card-face">
+        <img src="https://cdn.glitch.me/352dcfef-c818-4965-9d3c-44fa559f55d5%2FCatSeven.jpg?v=1639379774084" alt="cat" class="paw-web card-value">
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-back card-face">
+        <img src="https://cdn.glitch.me/352dcfef-c818-4965-9d3c-44fa559f55d5%2Fpaw.jpg?v=1639379786531" alt="cat" class="paw-web paw-move">
+      </div>
+      <div class="card-front card-face">
+        <img src="https://cdn.glitch.me/352dcfef-c818-4965-9d3c-44fa559f55d5%2FCatSeven.jpg?v=1639379774084" alt="cat" class="paw-web card-value">
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-back card-face">
+        <img src="https://cdn.glitch.me/352dcfef-c818-4965-9d3c-44fa559f55d5%2Fpaw.jpg?v=1639379786531" alt="cat" class="paw-web paw-move">
+      </div>
+      <div class="card-front card-face">
+        <img src="https://cdn.glitch.me/352dcfef-c818-4965-9d3c-44fa559f55d5%2FCatEight.jpg?v=1639379773922" alt="cat" class="paw-web card-value">
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-back card-face">
+        <img src="https://cdn.glitch.me/352dcfef-c818-4965-9d3c-44fa559f55d5%2Fpaw.jpg?v=1639379786531" alt="cat" class="paw-web paw-move">
+      </div>
+      <div class="card-front card-face">
+        <img src="https://cdn.glitch.me/352dcfef-c818-4965-9d3c-44fa559f55d5%2FCatEight.jpg?v=1639379773922" alt="cat" class="paw-web card-value">
+      </div>
+    </div>
+
+
+    </div>
+
+    
+    <script  src="script.js" async></script>
+</body>
+</html>
